@@ -1,0 +1,133 @@
+/*
+** stock.c for rt in /home/gicque_p/rendu/MUL_2013_rtracer/src/new_parsing
+** 
+** Made by Pierrick Gicquelais
+** Login   <gicque_p@epitech.net>
+** 
+** Started on  Mon May 12 18:33:49 2014 Pierrick Gicquelais
+** Last update Wed May 14 18:37:37 2014 Pierrick Gicquelais
+*/
+
+#include	<stdlib.h>
+#include	"lib.h"
+#include	"parsing.h"
+
+t_obj		*my_eye(t_obj *obj, int fd, int *cmp)
+{
+  t_tmp		*tmp;
+  char		*s;
+
+  tmp = new_tmp();
+  tmp->name = "eye";
+  while ((s = get_next_line(fd)) && my_strcmp(s, "</EYE>"))
+    {
+      if (s[0] && s[0] != COMMENT_CHAR)
+	tmp = parse_str(tmp, s, cmp);
+      (*cmp)++;
+      free(s);
+    }
+  obj = append_obj(obj, tmp);
+  free(s);
+  free(tmp);
+  return (obj);
+}
+
+t_obj		*my_sphere(t_obj *obj, int fd, int *cmp)
+{
+  t_tmp		*tmp;
+  char		*s;
+
+  tmp = new_tmp();
+  tmp->name = "sphere";
+  while ((s = get_next_line(fd)) && my_strcmp(s, "</SPHERE>"))
+    {
+      if (s[0] && s[0] != COMMENT_CHAR)
+	tmp = parse_str(tmp, s, cmp);
+      (*cmp)++;
+      free(s);
+    }
+  obj = append_obj(obj, tmp);
+  free(s);
+  free(tmp);
+  return (obj);
+}
+
+t_obj		*my_cyl(t_obj *obj, int fd, int *cmp)
+{
+  t_tmp		*tmp;
+  char		*s;
+
+  tmp = new_tmp();
+  tmp->name = "cyl";
+  while ((s = get_next_line(fd)) && my_strcmp(s, "</CYLINDER>"))
+    {
+      if (s[0] && s[0] != COMMENT_CHAR)
+	tmp = parse_str(tmp, s, cmp);
+      (*cmp)++;
+      free(s);
+    }
+  obj = append_obj(obj, tmp);
+  free(s);
+  free(tmp);
+  return (obj);
+}
+
+t_obj		*my_cone(t_obj *obj, int fd, int *cmp)
+{
+  t_tmp		*tmp;
+  char		*s;
+
+  tmp = new_tmp();
+  tmp->name = "cone";
+  while ((s = get_next_line(fd)) && my_strcmp(s, "</CONE>"))
+    {
+      if (s[0] && s[0] != COMMENT_CHAR)
+	tmp = parse_str(tmp, s, cmp);
+      (*cmp)++;
+      free(s);
+    }
+  obj = append_obj(obj, tmp);
+  free(s);
+  free(tmp);
+  return (obj);
+}
+
+t_obj		*my_plan(t_obj *obj, int fd, int *cmp)
+{
+  t_tmp		*tmp;
+  char		*s;
+
+  tmp = new_tmp();
+  tmp->name = "plan";
+  while ((s = get_next_line(fd)) && my_strcmp(s, "</PLAN>"))
+    {
+      if (s[0] && s[0] != COMMENT_CHAR)
+	tmp = parse_str(tmp, s, cmp);
+      (*cmp)++;
+      free(s);
+    }
+  obj = append_obj(obj, tmp);
+  free(s);
+  free(tmp);
+  return (obj);
+}
+
+t_obj		*my_spot(t_obj *obj, int fd, int *cmp)
+{
+  t_tmp		*tmp;
+  char		*s;
+
+  tmp = new_tmp();
+  tmp->name = "spot";
+  while ((s = get_next_line(fd)) && my_strcmp(s, "</SPOT>"))
+    {
+      if (s[0] && s[0] != COMMENT_CHAR)
+	tmp = parse_str(tmp, s, cmp);
+      (*cmp)++;
+      free(s);
+    }
+  obj = append_obj(obj, tmp);
+  free(s);
+  free(tmp);
+  return (obj);
+}

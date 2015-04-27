@@ -1,0 +1,52 @@
+<EYE>
+	X: 50
+	Y: 50
+	Z: 50
+	ROT_X: 50
+#Je suis un commentaire konar
+	ROT_Y: 50
+	ROT_Z: 50
+	COLOR: 50
+</EYE>
+
+<SPHERE>
+	X: 10
+       	Y: 10
+	Z: 10
+	ROT_X: 10
+	ROT_Z: 10
+	COLOR: 10
+</SPHERE>
+
+<CYLINDER>
+	X: 20
+	Y: 20
+	Z: 20
+	ROT_X: 20
+	ROT_Y: 20
+	ROT_Z: 20
+	ANGLE: 20
+	COLOR: 20
+</CYLINDER>
+
+<SPOT>
+	X: 150
+	Y: 150
+	Z: 150
+	COLOR: 150
+</SPOT>
+
+<PLAN>
+	Z: 35
+	ROT_X: 35
+	ROT_Y: 35
+	ROT_Z: 35
+	COLOR: 35
+</PLAN>
+
+<SPOT>
+	X: 140
+	Y: 140
+	Z: 140
+	COLOR: 140
+</SPOT>

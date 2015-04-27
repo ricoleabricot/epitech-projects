@@ -1,0 +1,12 @@
+- help ou ? avec cmd pour lancer une page de manuel
+- Commande pour créer un utilisateur: setuser 'username' 'password'
+- Sauvegarde des passwords en rotone (vu qu'on peut pas utiliser le md5 de -lcrypto !)
+- Création des sessions pour un utilisateur (et de la déconnection de session)
+- Création d'un home directory différent pour chaque utilisateur
+- Possibilité d'upload/download un fichier et de lui donner un nom différent
+- Fonction mkdir pour créer un répertoire
+- Ajout du mode active avec la commande port
+- Utilisation du serveur avec Filezilla possible
+- Download/upload de gros fichiers possible
+- Ajout d'une commande 'rls' pour afficher le contenu du dossier du client
+- Ajout d'une commande 'dele' ou 'rm' pour supprimer un fichier ou un folder

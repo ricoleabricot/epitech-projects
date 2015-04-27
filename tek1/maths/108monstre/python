@@ -1,0 +1,28 @@
+#!/usr/bin/python
+
+import sys
+import math
+import matplotlib.pyplot as plt
+import numpy as np
+
+#########################################
+
+a = float(sys.argv[1])
+nmax = int(sys.argv[2])
+x = -2
+absc = []
+ordo = []
+while x <= 2:
+    k = 0
+    y = 0
+    while k <= nmax:
+        y = y + (math.cos(math.pow(a, k) * math.pi * x)) / math.pow(2, k)
+        k = k + 1
+    absc.append(x)
+    ordo.append(y)
+    x = x + 0.01
+plt.plot(absc, ordo)
+plt.ylabel('Axe des Ordonnees')
+plt.xlabel('Axe des Abscisses')
+plt.title('a =' + str(sys.argv[1]) + ' ; ' + 'nmax =' + str(sys.argv[2]))
+plt.show()

@@ -1,0 +1,47 @@
+<EYE>
+	X: -450
+	Y: 0
+	Z: 1
+</EYE>
+
+<ANGLE>
+	X: 5
+	Y: 0
+	Z: 0
+</ANGLE>
+
+<SPOT>
+	X: 35
+	Y: -25
+	Z: 25
+	C: 0xFFCC11
+	B: 0
+</SPOT>
+
+<PLAN>
+	Z: 0
+</PLAN>
+
+<SPHERE>
+	X: XOEIL - 10
+	Y: YOEIL - 35
+	Z: ZOEIL + 50
+	R: 0
+	C: 0x000099
+</SPHERE>
+
+<CYLINDRE>
+	X: XOEIL - 10
+	Y: YOEIL + 35
+	Z: ZOEIL - 10
+	R: 0
+	C: 0x00AA00
+</CYLINDRE>
+
+<CONE>
+	X: XOEIL
+	Y: YOEIL
+	Z: ZOEIL
+	R: 0
+	C: 0x990000
+</CONE>

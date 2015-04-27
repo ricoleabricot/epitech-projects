@@ -1,0 +1,89 @@
+#!/usr/bin/python
+
+#
+## python for 109titrage
+## Made by Pierrick Gicquelais
+## Login <gicque_p@epitech.eu>
+## Started on March 24, 2014
+## Last updated on April 1, 2014
+#
+
+########################################## IMPORT
+
+import sys
+import os
+import binascii
+import matplotlib.pyplot as plt
+
+########################################## INITIALIZATION
+
+def calcFunct():
+    i = 1
+    arglen = len(sys.argv) - 1
+    xold = 0
+    yold = 0
+    xmax = 0
+    ymax = 0
+    res = 0
+
+    cX = []
+    cY = []
+    dX = []
+    dY = []
+    vX = []
+    vY = []
+
+########################################## CALCULATING
+
+    while i <= arglen:
+        intput = sys.argv[i]
+        rhs = intput.split(";", 1)
+        x = float(rhs[0])
+        y = float(rhs[1])
+        cX.append(x)
+        cY.append(y)
+        i = i + 1
+        if res >= ymax:
+            xmax = x
+            ymax = res
+            dX.append(x)
+            dY.append(ymax)
+        else:
+            dX.append(x)
+            dY.append(res)
+        if (xold - x) != 0:
+            res = (yold - y) / (xold - x)
+        xold = x
+        yold = y
+
+    vX.append(xmax)
+    vX.append(xmax)
+    vY.append(0)
+    vY.append(14)
+
+########################################## PRINTING
+
+    print 'Volume equivalent = ' + str(xmax) + 'mL'
+    courbe = plt.plot(cX, cY, color='#000000', label='Titrage', linewidth=2)
+    der = plt.plot(dX, dY, color='#0000ff', label='Derivee', linewidth=2)
+    vol = plt.plot(vX, vY, color='#ff0000', label='Vol equi', linewidth=2)
+    plt.ylabel('PH')
+    plt.xlabel('Volume de soude en mL')
+    plt.axis([0, 25, 0, 14])
+    plt.legend()
+    plt.title('Titrage par PHmetrie')
+    plt.show()
+
+########################################## NO ERROR DE BATARD
+
+try:
+    os.environ["DISPLAY"]
+except:
+    print ("Environment disabled. End of programm")
+    sys.exit(-1)
+
+try:
+    calcFunct()
+except:
+    print 'Unexpected error .. Exiting'
+    sys.exit(-1)

@@ -1,0 +1,17 @@
+; -------------
+; exemple.avm -
+; -------------
+
+push int32(42.1)
+push int32(33)
+; commentaire
+add
+push float(44)
+mul
+push double(42); commentaire
+push int32(42)
+;;
+dump
+pop
+;;
+exit

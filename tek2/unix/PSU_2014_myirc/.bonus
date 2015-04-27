@@ -1,0 +1,9 @@
+- Création de channel (suppression lorsqu'il est vide)
+- Opérateur de channel
+- Commandes opérateurs: /kick, /invite, /oper, /deoper
+- Channels privés (avec une invitation à rejoindre pour d'autres utilisateurs)
+- Connaître des informations sur soi-même
+- Une commande help complète
+- Sauvegarde des fichiers sur le serveur des fichiers à envoyeravant d'être reçu
+- Mode public/privé pour un channel (empêchant des utilisateurs de join)
+- Commande kill() pour force-quit un utilisateur connecté

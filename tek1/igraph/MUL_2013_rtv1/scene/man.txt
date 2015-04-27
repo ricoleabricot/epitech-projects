@@ -1,0 +1,56 @@
+Manual page for configuration file of RayTracer
+
+Here is the commun configuration file you have to create to use the RayTracer.
+For each object, spot, eye, you have to enter its 'balise' with the right sigle to configure
+it, such as <OBJ> ... </OBJ> or <EYE> ... </EYE>.
+The 'balise' must be opened and closed !
+You can not enter twice a 'balise' !
+You have to enter an eye 'balise' to launch the programm.
+You have to enter ALL the configurations for an object, spot, ..
+If you want it to be null, just enter a zero.
+
+Object configuration:
+<OBJ>
+	X: value for X placement
+	Y: value for Y placement
+	Z: value for Z placement
+	R: value for angle/ray (must be strict positive)
+	C: color for object
+</OBJ>
+
+Spot configuration:
+<SPOT>
+	X: value for X placement
+	Y: value for Y placement
+	Z: value for Z placement
+	C: color for spot
+	B: brillance of spot (contained between 0 and 1)
+</SPOT>
+
+Plan configuration:
+<PLAN>
+	Z: value for Z placement
+</PLAN>
+
+Eye configuration:
+<EYE>
+	X: value for X placement
+	Y: value for Y placement
+	Z: value for Z placement
+</EYE>
+
+Eyed angle configuration:
+<ANGLE>
+	X: value for X rotation
+	Y: value for Y rotation
+	Z: value for Z rotation
+</ANGLE>
+
+Object example:
+<SPHERE>
+	X: 10
+	Y: -5
+	Z: 1
+	R: 25
+	C: 0xFFFFFF
+</SPHERE>

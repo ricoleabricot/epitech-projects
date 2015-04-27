@@ -1,0 +1,16 @@
+#!/usr/bin/python
+
+import matplotlib.pyplot as plt
+import numpy as np
+import sys
+import math
+
+x = np.linspace(-20, 20, 150)
+p1 = plt.plot(x,np.sin(x),marker='.')
+p2 = plt.plot(x,np.cos(x),marker=',')
+
+plt.axis([-10, 10, -30, 30])
+plt.title("107 - Transfert")
+plt.ylabel("Frequence de sortie")
+plt.xlabel("Frequence d'entree")
+plt.show()
