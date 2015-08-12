@@ -1,0 +1,13 @@
++--------------------------------------+
+| Norme de codage pour le Bomberman    |
++--------------------------------------+
+
+	-> Ceci est obligatoire et doit etre respecte par tout le groupe !! #Nazis! #civisme #Plasko
+
+ => sublime text
+ => pas d'utilisation du mot clef "this"
+ => mettre un '_' pour les attributs
+ => utilisation de 'and' 'or' a la place de && ||
+ => position des '{' '}' a la EPITECH
+ => pas de tabulation que des espaces, et 4 espaces par tabulation
+ 

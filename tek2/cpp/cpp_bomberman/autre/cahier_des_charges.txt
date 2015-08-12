@@ -1,0 +1,58 @@
+﻿Cahier des charges
+
+	//details au niveau du jeu
+- Un joueur peut poser des bombes
+- Déplacement 4 directions (haut bas gauche droite) avec vue du dessus
+- Une bombe entraine l'explosion des autres à proximité (à porté)
+- jeu de base jouable a plusieurs joueurs (limité à 4 ?)
+- differente carte (50 please cf wikipedia)
+- bloc cassable et incassable
+- musique
+- IA
+- sauvegarde / chargement des parties
+- Menu principal au dessus d'une partie jouer par des IA
+- menu pause pendant le jeu
+- Un écran de victoire (score ?)
+- Selection de personnage (différentes caractéristiques [vie, vitesse, puissance des bombes de départ, nombre de bombes au départ])
+- déplacement des joueurs fluide
+- sens unique (sol qui te dirige)
+- des trous (eau / vide)
+- portail de téléportation
+- tapis roulant qui déplace les bombes
+- poudre à canon (prend feu quand une bombe explose a proximité)
+- map avec des textures différentes
+- Cinématique au début (permet le chargement du jeu en arrière plan)
+- konami code
+- lancer / attraper bombe
+- inventaire (pour le mode aventure)
+- point de spawn (aléatoire)
+- editeur de map (obligatoire)
+- map limite
+- intro de début de partie (camera qui se déplace ?)
+- screenshot
+
+	//details des bombes
+- Bombe statique
+- Bombe que l'on peut pousser
+- Bombe poussable par le poser uniquement
+- Bombe activable par le joueur
+- Bombe qui détruit seulement le premier object destructible
+- Super bombe détruit tout les bloc possible jusqu'a sa porté ou arreter par un bloc indestructible
+	//details des bonus
+- Augmente la portée des bombes
+- Augmente les dégats des bombes
+- Accélère la vitesse du joueur
+- Objet smash (permet de lancer une capacité spéciale) [equipe un mega marteau, sauter au dessus d'un mur seul, camion qui détruit les murs cassables sans bombe]
+- Equipement d'une arme (marteau, laser)
+- Gagner du terraain sur l'écran des autres joueurs (split screen 60/40 70/30 etc)
+- augmente le nombre de bombe simultanée
+
+	//details des modes
+- Par équipe
+- mode aventure
+- Normal: 1 vie par joueur, tout est normal
+- Piece: Casser des blocs fait tomber des pieces. Se prendre des degats fait perdre des pieces (les fait tomber). A la fin du temps, le joueur qui a le plus de pièce a gagné
+
+	//details techniques
+- multi thread (surtout pour le chargement/déchargement du jeu)
+- Fonctinnel au PC et à la manette

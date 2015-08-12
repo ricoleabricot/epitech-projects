@@ -1,0 +1,58 @@
+FONCTIONS LIST
+--------------
+
+v: Done
+x: To do
+
+GRAPHIC
+	- v connexion au serveur
+	- v taille
+	- v contenu case
+	- v contenu carte
+	- v nom équipes
+	- v connexion d'un joueur
+	- v position d'un joueur
+	- v inventaire d'un joueur
+	- v niveau du joueur
+	- v joueur expulse
+	- v joueur broadcast
+	- v premier jouer lance incantation pour suivants case
+	- v fin encantation sur case donnée
+	- v joueur pond un oeuf
+	- v joueur jette une ressource
+	- v joueur prend une ressource
+	- v joueur avance
+	- v jouer à droite
+	- v jouer à gauche
+	- v joueur meurt de faim
+	- v oeuf pondu sur la case du joueur
+	- v oeuf éclot
+	- v oeuf meurt
+	- v joueur connecté pour l'oeuf
+	- v demande unité de temps courante du serveur
+	- v modification de l'unité de temps du serveur
+	- v fin du jeu
+	- v message du serveur
+	- v commande inconnue
+
+
+CLIENT
+	- v avance
+	- v droite
+	- v gauche
+	- v voir
+	- v inventaire
+	- v prend obj
+	- v pose obj
+	- v expulse
+	- v broadcast	A TEST
+	- v incantation
+	- v fork
+	- v connect_nbr
+
+SERVER
+	- v bufferisation du message (Ctrl + D)
+	- v utilisation de fd_write de select
+	- v rajouter un ID aux oeufs
+	- v rajouter un ID parent aux oeufs (utile pour la connexion d'un graphic)
+	- v Probleme lors de l'affichage de la vision (affiche un sibur mais quand on avance affiche un phiras)

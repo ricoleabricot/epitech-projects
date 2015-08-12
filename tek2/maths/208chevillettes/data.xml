@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <data>
+        <line id="pourcent">
+            <cell> 99 </cell>
+            <cell> 90 </cell>
+            <cell> 80 </cell>
+            <cell> 70 </cell>
+            <cell> 60 </cell>
+            <cell> 50 </cell>
+            <cell> 40 </cell>
+            <cell> 30 </cell>
+            <cell> 20 </cell>
+            <cell> 10 </cell>
+            <cell> 5 </cell>
+            <cell> 2 </cell>
+            <cell> 1 </cell>
+        </line>
+
+        <line>
+            <cell> 1 </cell>
+            <cell> 0.00 </cell>
+            <cell> 0.02 </cell>
+            <cell> 0.06 </cell>
+            <cell> 0.15 </cell>
+            <cell> 0.27 </cell>
+            <cell> 0.45 </cell>
+            <cell> 0.71 </cell>
+            <cell> 1.07 </cell>
+            <cell> 1.64 </cell>
+            <cell> 2.71 </cell>
+            <cell> 3.84 </cell>
+            <cell> 5.41 </cell>
+            <cell> 6.63 </cell>
+        </line>
+
+        <line>
+            <cell> 2 </cell>
+            <cell> 0.02 </cell>
+            <cell> 0.21 </cell>
+            <cell> 0.45 </cell>
+            <cell> 0.71 </cell>
+            <cell> 1.02 </cell>
+            <cell> 1.39 </cell>
+            <cell> 1.83 </cell>
+            <cell> 2.41 </cell>
+            <cell> 3.22 </cell>
+            <cell> 4.61 </cell>
+            <cell> 5.99 </cell>
+            <cell> 7.82 </cell>
+            <cell> 9.21 </cell>
+        </line>
+
+        <line>
+            <cell> 3 </cell>
+            <cell> 0.11 </cell>
+            <cell> 0.58 </cell>
+            <cell> 1.01 </cell>
+            <cell> 1.42 </cell>
+            <cell> 1.87 </cell>
+            <cell> 2.37 </cell>
+            <cell> 2.95 </cell>
+            <cell> 3.66 </cell>
+            <cell> 4.64 </cell>
+            <cell> 6.25 </cell>
+            <cell> 7.81 </cell>
+            <cell> 9.84 </cell>
+            <cell> 11.34 </cell>
+        </line>
+
+        <line>
+            <cell> 4 </cell>
+            <cell> 0.30 </cell>
+            <cell> 1.06 </cell>
+            <cell> 1.65 </cell>
+            <cell> 2.19 </cell>
+            <cell> 2.75 </cell>
+            <cell> 3.36 </cell>
+            <cell> 4.04 </cell>
+            <cell> 4.88 </cell>
+            <cell> 5.99 </cell>
+            <cell> 7.78 </cell>
+            <cell> 9.49 </cell>
+            <cell> 9.84 </cell>
+            <cell> 11.34 </cell>
+        </line>
+
+        <line>
+            <cell> 5 </cell>
+            <cell> 0.55 </cell>
+            <cell> 1.61 </cell>
+            <cell> 2.34 </cell>
+            <cell> 3.00 </cell>
+            <cell> 3.66 </cell>
+            <cell> 4.35 </cell>
+            <cell> 5.13 </cell>
+            <cell> 6.06 </cell>
+            <cell> 7.29 </cell>
+            <cell> 9.24 </cell>
+            <cell> 11.07 </cell>
+            <cell> 11.67 </cell>
+            <cell> 13.28 </cell>
+        </line>
+
+        <line>
+            <cell> 6 </cell>
+            <cell> 0.7 </cell>
+            <cell> 2.20 </cell>
+            <cell> 3.07 </cell>
+            <cell> 3.83 </cell>
+            <cell> 4.57 </cell>
+            <cell> 5.35 </cell>
+            <cell> 6.21 </cell>
+            <cell> 7.23 </cell>
+            <cell> 8.56 </cell>
+            <cell> 10.64 </cell>
+            <cell> 12.59 </cell>
+            <cell> 15.03 </cell>
+            <cell> 16.81 </cell>
+        </line>
+
+        <line>
+            <cell> 7 </cell>
+            <cell> 1.24 </cell>
+            <cell> 2.83 </cell>
+            <cell> 3.82 </cell>
+            <cell> 4.67 </cell>
+            <cell> 5.49 </cell>
+            <cell> 6.35 </cell>
+            <cell> 7.28 </cell>
+            <cell> 8.38 </cell>
+            <cell> 9.80 </cell>
+            <cell> 12.02 </cell>
+            <cell> 14.07 </cell>
+            <cell> 16.62 </cell>
+            <cell> 18.48 </cell>
+        </line>
+
+        <line>
+            <cell> 8 </cell>
+            <cell> 1.65 </cell>
+            <cell> 3.49 </cell>
+            <cell> 4.59 </cell>
+            <cell> 5.53 </cell>
+            <cell> 6.42 </cell>
+            <cell> 7.34 </cell>
+            <cell> 8.35 </cell>
+            <cell> 9.52 </cell>
+            <cell> 11.03 </cell>
+            <cell> 13.36 </cell>
+            <cell> 15.51 </cell>
+            <cell> 18.17 </cell>
+            <cell> 20.09 </cell>
+        </line>
+
+        <line>
+            <cell> 9 </cell>
+            <cell> 2.09 </cell>
+            <cell> 4.17 </cell>
+            <cell> 5.38 </cell>
+            <cell> 6.39 </cell>
+            <cell> 7.63 </cell>
+            <cell> 8.34 </cell>
+            <cell> 9.41 </cell>
+            <cell> 10.66 </cell>
+            <cell> 12.24 </cell>
+            <cell> 14.68 </cell>
+            <cell> 16.92 </cell>
+            <cell> 19.68 </cell>
+            <cell> 21.67 </cell>
+        </line>
+
+        <line>
+            <cell> 10 </cell>
+            <cell> 2.56 </cell>
+            <cell> 4.87 </cell>
+            <cell> 6.18 </cell>
+            <cell> 7.27 </cell>
+            <cell> 8.30 </cell>
+            <cell> 9.34 </cell>
+            <cell> 10.47 </cell>
+            <cell> 11.78 </cell>
+            <cell> 13.44 </cell>
+            <cell> 15.99 </cell>
+            <cell> 18.31 </cell>
+            <cell> 21.16 </cell>
+            <cell> 23.21 </cell>
+        </line>
+    </data>
+</xml>

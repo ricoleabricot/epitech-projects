@@ -1,0 +1,98 @@
+                                1er approche du Bomberman
+
+5 niveaux predefinit seront disponibles pour chaques joueurs. Durant sa quete, un joueur
+augmente de niveau tous les X niveaux. Exemple :
+Nombre total de level = 50
+          Level 10 => +1 niveau
+          Level 20 => +1 niveau
+          Level 30 => +1 niveau
+          ...
+          
+Ces niveaux permettront aux joueurs d'aquerir des atouts (lister ci-dessous) pour
+faciliter sa progression.
+          Liste des atouts et objets selon les niveaux :
+
+      Niveau 1 :
+             - Bombe statique (Niveau de porte : 1)
+             - Vitesse de deplacement (Niveau de vitesse : 1)
+
+      Niveau 2 :
+             - Bombe statique (Niveau de porte : 2)
+             - Vitesse de deplacement (Niveau de vitesse : 2)
+             - Bombe poussable (uniquement celle du poseur)
+
+      Niveau 3 :
+             - Bombe statique (Niveau de porte : 3)
+             - Vitesse de deplacement (Niveau de vitesse : 3)
+             - Bombe poussable
+             - Attraper et lancer une bombe
+             - Poudre a canon
+
+      Niveau 4 :
+             - Bombe statique (Niveau de porte : 4)
+             - Vitesse de deplacement (Niveau de vitesse : 4)
+             - Bombe poussable
+             - Attraper et lancer une bombe
+             - Poudre a canon
+             - Bombe activable (A distance ?)
+
+      Niveau 5 :
+             - Bombe statique (Niveau de porte : 5)
+             - Vitesse de deplacement (Niveau de vitesse : 5)
+             - Bombe poussable
+             - Attraper et lancer une bombe
+             - Poudre a canon
+             - Bombe activable
+             - Super bombe (=> Sa porte peut detruire un object destructible et est
+             arretee devant un objet incassable)
+
+           ---------------------------------------------------------------------
+
+Un store sera disponible pour tous les joueurs. Ce magasin permettra d'acheter (avec
+le nombre de piece acquis durant la partie) des ameliorations et des objets.
+Certains elements du magasin seront bloques pour les joueurs d'un certain niveau et
+debloquables a partir d'un certain niveau. Exemple :
+             Un joueur du niveau 1 ne peut pas acheter de la poudre a canon car elle
+             n'est disponible qu'a partir du niveau 3.
+Cette approche donne a l'utilisateur un sentiment d'envie et le pousse a jouer a notre
+jeu avant d'avoir acces a tous les objets. Et pour accentuer ce sentiment, certains
+objets ne sont disponibles que dans le store.
+
+       Liste des articles du magasin :
+
+Objets:
+      - Objet smash : mega marteau, camion. (uniquement disponible dans le store)
+              => Ne detruit que les objets cassables
+      - Bombe chercheuse : (uniquement disponible dans le store)
+              => Detruit uniquement le 1er objet destructible grace a sa portee
+      - Bombe activable : (uniquement disponible qu'a partir du niveau 4)
+      - Poudre a canon : (uniquement disponible qu'a partir du niveau 3)
+      - Super bombe : (uniquement disponible qu'a partir du niveau 5)
+      
+Ameliorations :
+      - Vitesse plus
+              => Ajoute une unite a la vitesse de deplacement
+      - Portee plus (Ajoute une unite a la portee des bombes du joueur)
+              => Ajoute une unite de portee 
+
+            -----------------------------------------------------------------------
+
+Plus un joueur avance dans sa quete, plus les niveaux sont difficiles. Cette difficulte
+est ajoutee par l'IA mais aussi par des obstacles. Exemple :
+Nombre de niveau = 50
+       - Niveau 1 a 10 :
+                => Blocs cassables et incassables
+       - Niveau 11 a 20 :
+                => Blocs cassables et incassables
+                => Trous (eau ou vide)
+       - Niveau 21 a 30 :
+                => Blocs cassables et incassables
+                => Trous
+                => Sens uniques
+       ...
+
+Liste des obstacles :
+
+       - Trous (eau ou vide)
+       - Sens uniques (Tapis roulant). // Deplacement des bombes aussi ?
+       - Portail de teleportation
